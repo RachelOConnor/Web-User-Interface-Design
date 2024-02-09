@@ -17,8 +17,8 @@
             <!-- Modal content -->
             <div class="popup-content">
                 <span class="close">&times;</span>
-                <div id="sale">
-                    <img src="https://i.pinimg.com/originals/bb/60/e5/bb60e5dcb620c39744f8560d7c35e66f.png"
+                <div>
+                    <img id="sale" src="https://i.pinimg.com/originals/bb/60/e5/bb60e5dcb620c39744f8560d7c35e66f.png"
                     alt="25% off grand opening sale popup">
                 </div>
             </div>
@@ -36,50 +36,43 @@
             <input type="text" id="searchBar" onkeyup="searchFunction()" placeholder="Search...">
         </div>
 
+        <!-- Table (grid) for pics -->
+        <div class="itemTable">
 
-        <!-- Table for pics -->
-        <table id="itemTable">
-            <tr>
-                <td><a href="https://heritagewheel.com/products/kokorom" class="links"><img class="resize" src="https://heritagewheel.com/cdn/shop/products/KOKORO_MonoC_Sakura_Pink_1_750x.jpg?v=1674753659" 
-                    alt="Pink Heart Alloy"><br>Heart Alloy (Pink) - €255.95</a>
-                </td>
-
-                <td><a href="https://heritagewheel.com/products/kokorom" class="links"><img class="resize" src="https://images.customwheeloffset.com/wheels-compressed-thumb/heritage/kokoromonoc/kokoromonoc_glossblack_white.jpg"
+            <div class="grid-item">
+                <a href="https://heritagewheel.com/products/kokorom" class="links"><img src="https://heritagewheel.com/cdn/shop/products/KOKORO_MonoC_Sakura_Pink_1_750x.jpg?v=1674753659" 
+                alt="Pink Heart Alloy"><br>Heart Alloy (Pink) - €255.95</a>
+            </div>
+            <div class="grid-item">
+                <a href="https://heritagewheel.com/products/kokorom" class="links"><img src="https://images.customwheeloffset.com/wheels-compressed-thumb/heritage/kokoromonoc/kokoromonoc_glossblack_white.jpg"
                     alt="Black Heart Alloy"><br>Heart Alloy (Black) - €255.95</a>
-                </td>
+            </div>
+            <div class="grid-item"><a href="https://heritagewheel.com/products/kokorom" class="links"><img src="https://images.customwheeloffset.com/wheels/heritage/kokoromonoc/kokoromonoc_silver_white.jpg"
+                alt="Silver Heart Alloy"><br>Heart Alloy (Silver) - €255.95</a>
+            </div>  
 
-                <td><a href="https://heritagewheel.com/products/kokorom" class="links"><img class="resize" src="https://images.customwheeloffset.com/wheels/heritage/kokoromonoc/kokoromonoc_silver_white.jpg"
-                    alt="Silver Heart Alloy"><br>Heart Alloy (Silver) - €255.95</a>
-                </td>
 
-            </tr>
-            <tr>
-                <td><a href="https://etchedout.com.au/pages/pricing" class="links"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSi38OpVHEKTGJleCD83YqOIAkH6XzB9GXdn8B_9km4yXGY0ngYGw_Hd2wR9T0jf6Q1tE&usqp=CAU"
+            <div class="grid-item"><a href="https://etchedout.com.au/pages/pricing" class="links"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSi38OpVHEKTGJleCD83YqOIAkH6XzB9GXdn8B_9km4yXGY0ngYGw_Hd2wR9T0jf6Q1tE&usqp=CAU"
                 alt="Cherry Blossom Brake Light"><br>Engraved Brake Light (Cherry Blossom) - €222.95</a>
-                </td>
-
-                <td> <a href="https://etchedout.com.au/pages/pricing" class="links"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzpj6Y0yzpsnc0rrck0xCHcuO6J0zsHJjO--3dKKW7Xd9E6HKSNxSr727giBxBbaKuRQ&usqp=CAU"
+            </div>
+            <div class="grid-item"><a href="https://etchedout.com.au/pages/pricing" class="links"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzpj6Y0yzpsnc0rrck0xCHcuO6J0zsHJjO--3dKKW7Xd9E6HKSNxSr727giBxBbaKuRQ&usqp=CAU"
                 alt="Roses Brake Light"><br>Engraved Brake Light (Roses) - €247.95</a>
-                </td>
+            </div>
+            <div class="grid-item"><a href="https://etchedout.com.au/pages/pricing" class="links"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdxxTpDhBQPfUIhIXIlThsKusuv0MGrdSGxX7YoBd_rYdlWjzzRvIbyxEXzt2D7fre_c&usqp=CAU"
+                alt="Fish Brake Light"><br>Engraved Brake Light (Fish) - €296.95</a>
+            </div>  
 
-                <td><a href="https://etchedout.com.au/pages/pricing" class="links"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdxxTpDhBQPfUIhIXIlThsKusuv0MGrdSGxX7YoBd_rYdlWjzzRvIbyxEXzt2D7fre_c&usqp=CAU"
-                    alt="Fish Brake Light"><br>Engraved Brake Light (Fish) - €296.95</a>
-                </td>
-            </tr>
-            <tr>
-                <td><a href="https://www.jkracingjdm.com/products/copy-of-brand-new-devil-demon-heart-teal-glows-in-the-dark-jdm-tsurikawa-ring-subway-train-bus-handle-strap-charm-drift-1" class="links"><img class="resize" src="https://www.jkracingjdm.com/cdn/shop/products/72_c076630f-f172-4853-86b2-3598ca130723_1024x1024.jpg?v=1634517095"
+
+            <div class="grid-item"><a href="https://www.jkracingjdm.com/products/copy-of-brand-new-devil-demon-heart-teal-glows-in-the-dark-jdm-tsurikawa-ring-subway-train-bus-handle-strap-charm-drift-1" class="links"><img src="https://www.jkracingjdm.com/cdn/shop/products/72_c076630f-f172-4853-86b2-3598ca130723_1024x1024.jpg?v=1634517095"
                 alt="Pink Tsurikawa Demon Heart Strap"><br>Tsurikawa Demon Heart Strap (Pink) - €18.46</a>
-                </td>
-
-                <td> <a href="https://www.jkracingjdm.com/products/brand-new-jdm-nismo-devil-demon-heart-black-jdm-tsurikawa-ring-subway-train-bus-handle-strap-charm-drift" class="links"><img class="resize" src="https://www.jkracingjdm.com/cdn/shop/products/il_fullxfull.2989821144_asis_1200x1200.jpg?v=1628191045"
+            </div>
+            <div class="grid-item"><a href="https://www.jkracingjdm.com/products/brand-new-jdm-nismo-devil-demon-heart-black-jdm-tsurikawa-ring-subway-train-bus-handle-strap-charm-drift" class="links"><img src="https://www.jkracingjdm.com/cdn/shop/products/il_fullxfull.2989821144_asis_1200x1200.jpg?v=1628191045"
                 alt="Black Tsurikawa Demon Heart Strap"><br>Tsurikawa Demon Heart Strap (Black) - €18.46</a>
-                </td>
-
-                <td><a href="https://www.jkracingjdm.com/products/copy-of-brand-new-devil-demon-heart-white-jdm-tsurikawa-ring-subway-train-bus-handle-strap-charm-drift" class="links"><img class="resize" src="https://www.jkracingjdm.com/cdn/shop/products/il_fullxfull.2989091195_187n_1024x1024.jpg?v=1628192179"
-                    alt="White Tsurikawa Demon Heart Strap"><br>Tsurikawa Demon Heart Strap (White) - €18.46</a>
-                </td>
-            </tr>
-        </table>
+            </div>
+            <div class="grid-item"><a href="https://www.jkracingjdm.com/products/copy-of-brand-new-devil-demon-heart-white-jdm-tsurikawa-ring-subway-train-bus-handle-strap-charm-drift" class="links"><img src="https://www.jkracingjdm.com/cdn/shop/products/il_fullxfull.2989091195_187n_1024x1024.jpg?v=1628192179"
+                alt="White Tsurikawa Demon Heart Strap"><br>Tsurikawa Demon Heart Strap (White) - €18.46</a>
+            </div>  
+          </div>
 
         <!-- Footer for page -->
         <footer>
