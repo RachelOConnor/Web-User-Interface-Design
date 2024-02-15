@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+        <link href="assets/css/screen.css" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/fizzy-soda" rel="stylesheet">
+    </head> 
+
+<body>
+
+    <a id="backButton" href="index.html">Back</a>
+    <header>Contact Form</header>
+
+    <!-- Form -->
+    <div>
+        <form id="form">
+            <p>Name:     
+                <input id="nameBox" class="formStyle" type="text" name="name" placeholder="Jane Doe"><br>
+            </p>
+
+            <p>Email: 
+                <input id="emailBox" class="formStyle" type="email" name="email" placeholder="example@gmail.com"><br>
+            </p>
+
+            <p>Details:
+                <span id="detailBox" class="textarea" role="textbox" contenteditable></span>
+            </p><br>
+
+            <input id="submitButton" onclick=checkForm() class="formStyle" type="submit" value="Submit"><br>
+        </form>
+    </div>
+
+
+    <!-- Footer for page -->
+    <footer>
+        <p id="footerText">AutoParts Direct<br>
+            Email: autoauto@gmail.com</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
