@@ -1,0 +1,137 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #0779e4 3px solid;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+section {
+    padding: 20px 0;
+    border-bottom: 1px #e4e4e4 solid;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#web-architecture{
+    margin-top: 3vh;
+    border: 1px solid #c4c4c4;
+}
+
+#web-servers{
+    margin-top: 3vh;
+    border: 1px solid #c4c4c4;
+}
+
+table{
+    width: 98%;
+    border: 1px solid #c4c4c4;
+    grid-row: auto;
+    margin-left: 10px;
+    column-gap: normal;
+    background-color:#c4c4c4;
+}
+
+.text-size{
+    font-size: 110%;
+    border: none;
+}
+
+h2{
+    font-size: 200%;
+}
+
+#figure-text{
+    font-style: italic;
+    text-align: center;
+}
+
+
+#image{
+    border: 1px solid #c4c4c4;
+}
+
+article{
+    margin-bottom: 2vw;
+    display:flex;
+}
+
+th{
+    background-color: #c4c4c4;
+}
+
+td{
+    background-color: #f4f4f4;
+}
+
+dt{
+    font-weight: bold;
+    float: left;
+}
+
+dd{
+    padding-left: 4vw;
+    font-style: italic;
+}
+
+
+section{
+    margin-bottom: 3vw;
+}
+
+figure{
+    text-align: center;
+}
+
+.concept-group{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.concept{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+#block{
+    display:flex;
+}
+
+#internet{
+    text-align: center;
+}
+
+aside{
+    background-color: #c4c4c4;
+    float: right;
+    width: 50%;
+}
