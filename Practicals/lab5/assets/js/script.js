@@ -1,5 +1,6 @@
-  // Get popup by id
-  var popup = document.getElementById("salePopup");
+document.addEventListener("DOMContentLoaded", (event) => {
+// Get popup by id
+var popup = document.getElementById("salePopup");
 
 // Alert of sale on load.
 let homeBody = document.getElementById("home");
@@ -23,6 +24,14 @@ homeBody.onclick = function(event) {
     popup.style.display = "none";
   }
 }
+});
+
+$(document).ready(function(){
+  $("#factButton").click(function(){
+    $("#fact").fadeIn("slow");
+    $("#factButton").hide();
+  });
+});
 
 
 function checkForm(){
@@ -89,4 +98,8 @@ function hamburger(){
     x.className = "nav";
   }
 }
+
+
+
+
 

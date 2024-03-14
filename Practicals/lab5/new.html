@@ -7,49 +7,59 @@
         <title>New</title>
         <link href="assets/css/screen.css" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/fizzy-soda" rel="stylesheet">
-        <script src="assets/js/script.js"></script>
     </head> 
 
     <body>
         
-        <div id="top-section">
-            <header>Auto Parts</header>
-            <input id="car" type="image" src="assets/img/car.png" onclick=changeCar() alt="Clickable vehicle icon">
-        </div>
-
-        <!-- Navigation bar -->
-        <div class="nav" id="myNav">
-            <a href="javascript:void(0);" class="icon" onclick="hamburger()">
-                <img id="hamIcon" src="assets/img/hamburgerIcon.png" alt="hamburger icon">
-            </a>
-            <a class="navhover" href="index.html">All</a>
-            <a class="active">New</a>
-            <a class="navhover" href="sale.html">Sale</a>
-            <a class="navhover" href="about.html">About</a>
-        </div>
-
-        <!-- Flexbox instead of table -->
-        <div class="itemTable">
-
-            <div class="grid-item"><a class="links" href="https://etchedout.com.au/pages/pricing"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSi38OpVHEKTGJleCD83YqOIAkH6XzB9GXdn8B_9km4yXGY0ngYGw_Hd2wR9T0jf6Q1tE&usqp=CAU"
-                alt="Cherry Blossom Brake Light"><br>Engraved Brake Light (Cherry Blossom)<br> -  €222.95</a>
+        <section>
+            <div id="top-section">
+                <header>Auto Parts</header>
+                <input id="car" type="image" src="assets/img/car.png" onclick=changeCar() alt="Clickable vehicle icon">
             </div>
+        </section>
 
-            <div class="grid-item"><a class="links" href="https://etchedout.com.au/pages/pricing"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzpj6Y0yzpsnc0rrck0xCHcuO6J0zsHJjO--3dKKW7Xd9E6HKSNxSr727giBxBbaKuRQ&usqp=CAU"
-                alt="Roses Brake Light"><br>Engraved Brake Light (Roses)<br> -  €247.95</a>
+        <section>
+            <!-- Navigation bar -->
+            <div class="nav" id="myNav">
+                <a href="javascript:void(0);" class="icon" onclick="hamburger()">
+                    <img id="hamIcon" src="assets/img/hamburgerIcon.png" alt="hamburger icon">
+                </a>
+                <a class="navhover" href="index.html">All</a>
+                <a class="active">New</a>
+                <a class="navhover" href="sale.html">Sale</a>
+                <a class="navhover" href="about.html">About</a>
             </div>
+        </section>
 
-            <div class="grid-item"><a class="links" href="https://etchedout.com.au/pages/pricing"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdxxTpDhBQPfUIhIXIlThsKusuv0MGrdSGxX7YoBd_rYdlWjzzRvIbyxEXzt2D7fre_c&usqp=CAU"
-                alt="Fish Brake Light"><br>Engraved Brake Light (Fish)<br> -  €296.95</a>
+        <section>
+            <!-- Flexbox instead of table -->
+            <div class="itemTable">
+
+                <div class="grid-item"><a class="links" href="https://etchedout.com.au/pages/pricing"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSi38OpVHEKTGJleCD83YqOIAkH6XzB9GXdn8B_9km4yXGY0ngYGw_Hd2wR9T0jf6Q1tE&usqp=CAU"
+                    alt="Cherry Blossom Brake Light"><br>Engraved Brake Light (Cherry Blossom)<br> -  €222.95</a>
+                </div>
+
+                <div class="grid-item"><a class="links" href="https://etchedout.com.au/pages/pricing"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzpj6Y0yzpsnc0rrck0xCHcuO6J0zsHJjO--3dKKW7Xd9E6HKSNxSr727giBxBbaKuRQ&usqp=CAU"
+                    alt="Roses Brake Light"><br>Engraved Brake Light (Roses)<br> -  €247.95</a>
+                </div>
+
+                <div class="grid-item"><a class="links" href="https://etchedout.com.au/pages/pricing"><img class="resize" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcdxxTpDhBQPfUIhIXIlThsKusuv0MGrdSGxX7YoBd_rYdlWjzzRvIbyxEXzt2D7fre_c&usqp=CAU"
+                    alt="Fish Brake Light"><br>Engraved Brake Light (Fish)<br> -  €296.95</a>
+                </div>
+
             </div>
+        </section>
 
-        </div>
+        <section>
+            <!-- Footer for page -->
+            <footer>
+                <p id="footerText">AutoParts Direct<br>
+                    Email: autoauto@gmail.com</p>
+                    <a id="contact-form" href="contact.html">Contact Us</a>
+            </footer>
+        </section>
 
-        <!-- Footer for page -->
-        <footer>
-            <p id="footerText">AutoParts Direct<br>
-                Email: autoauto@gmail.com</p>
-                <a id="contact-form" href="contact.html">Contact Us</a>
-        </footer>
-
+        <script src="assets/js/script.js"></script>
     </body>
+
+</html>

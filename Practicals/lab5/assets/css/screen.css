@@ -83,6 +83,20 @@ aside {
     color: black;
   }
 
+#fact{
+  display: none;
+}
+
+#factButton{
+  background-color: #EEB3D2;
+  width: 10vw;
+  height: 4vw;
+  text-align: center;
+  font-family: 'Fizzy Soda', sans-serif;
+  margin-bottom: 5%;
+  border-color: rgb(255, 215, 228);
+}
+
 
 p, ul{
     font-size: 1.5vw;
@@ -350,6 +364,7 @@ header{
 
 #fact{
   font-size: 3vw;
+  display: none;
 }
 
 aside {
@@ -389,6 +404,11 @@ aside {
 
 #options{
   font-size: 3vw;
+}
+
+#factButton{
+  width: 18vw;
+  height: 10vw;
 }
 
 }

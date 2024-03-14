@@ -26,7 +26,7 @@ This website is aimed towards car lovers who want to spice up their car's appear
 - **Lab 2:** Using javascript to check the form and lead off to different pages took some time to get used to.
 - **Lab 3:** Learning how to utilise and style flexboxes and grids over tables
 - **Lab 4:** Learning how to check if source has particular string inside
-- **Lab 5:** Libraries won't work - they load in (confirmed in console) but won't run any functions
+- **Lab 5:** Implemented jQuery
 
 ### Insights
 - **Lab 1:** Learned the importance of clear and organised HTML for website structure.
@@ -40,4 +40,4 @@ This website is aimed towards car lovers who want to spice up their car's appear
 - **Lab 2:** Updated the website with a contact form and new pages for sale, new in, etc.
 - **Lab 3:** Replaced table on "New" and "Sale" with flexbox, replaced main table on home page to grid.
 - **Lab 4:** Clickable car on home screen that changes the car and plays a horn sound
-- **Lab 5:** Replaced all flexboxes with grid, made site more responsive, fixed car horns
+- **Lab 5:** Replaced all flexboxes with grid, made site more responsive, fixed car horns and popup
