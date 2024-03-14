@@ -105,6 +105,8 @@ function handleDrop(event) {
     list.insertBefore(draggedElement, droppedOn.nextSibling);
 }
 
+let cityUp = true;
+
 // Function to sort the weather log entries by city name
 function sortByCity() {
     const logList = document.getElementById('logList');
@@ -113,11 +115,22 @@ function sortByCity() {
     logs.sort((a, b) => {
         const cityA = a.querySelector('span.city').textContent;
         const cityB = b.querySelector('span.city').textContent;
-        return cityA.localeCompare(cityB);
+
+        if(cityUp){
+            return cityA.localeCompare(cityB);
+        }
+        else{
+            return cityB.localeCompare(cityA);
+        }
+
     });
 
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
+
+    cityUp = !cityUp;
 }
+
+let tempUp = true;
 
 // Function to sort the weather log entries by temperature
 function sortByTemperature() {
@@ -127,11 +140,21 @@ function sortByTemperature() {
     logs.sort((a, b) => {
         const tempA = parseFloat(a.querySelector('span.temperature').textContent.split(':')[1]);
         const tempB = parseFloat(b.querySelector('span.temperature').textContent.split(':')[1]);
-        return tempA - tempB;
+
+        if(tempUp){
+            return tempA - tempB;
+        }
+        else{
+            return tempB - tempA;
+        }
     });
 
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
+
+    tempUp = !tempUp;
 }
+
+let condUp = true;
 
 function sortByCondition(){
     const logList = document.getElementById('logList');
@@ -142,8 +165,16 @@ function sortByCondition(){
         const conditionA = a.querySelector('span.conditions').textContent;
         const conditionB = b.querySelector('span.conditions').textContent;
 
-        return conditionA.localeCompare(conditionB);
+        if(condUp){
+            return conditionA.localeCompare(conditionB);
+        }
+        else{
+            return conditionB.localeCompare(conditionA);
+        }
+
     });
 
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
+
+    condUp = !condUp;
 }
