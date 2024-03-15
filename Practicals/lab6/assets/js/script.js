@@ -72,9 +72,12 @@ function createWeatherLog(data) {
     logEntry.appendChild(conditions);
     document.getElementById('logList').appendChild(logEntry);
 
+    $(logEntry).hide();
+    $(logEntry).fadeIn("slow");
+
     // Animate the log entry's appearance using opacity
-    logEntry.style.opacity = 0;
-    setTimeout(() => logEntry.style.opacity = 1, 10);
+    // logEntry.style.opacity = 0;
+    // setTimeout(() => logEntry.style.opacity = 1, 10);
 }
 
 // Function to enable drag-and-drop functionality for log entries
@@ -128,6 +131,9 @@ function sortByCity() {
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
 
     cityUp = !cityUp;
+
+    $(logs).hide();
+    animate(0, logs);
 }
 
 let tempUp = true;
@@ -152,6 +158,9 @@ function sortByTemperature() {
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
 
     tempUp = !tempUp;
+
+    $(logs).hide();
+    animate(0, logs);
 }
 
 let condUp = true;
@@ -177,4 +186,24 @@ function sortByCondition(){
     logs.forEach(log => logList.appendChild(log)); // Re-append to apply the new order
 
     condUp = !condUp;
+
+    $(logs).hide();
+    animate(0, logs);
 }
+
+function animate(step, t_logs) 
+{
+    logLength = $(t_logs).length;
+
+    if (step < logLength){
+
+        $(t_logs[step]).fadeIn("slow");
+
+        setTimeout(function () 
+        {
+            animate(step = step + 1, t_logs); 
+        },
+        100);
+    }
+}
+
