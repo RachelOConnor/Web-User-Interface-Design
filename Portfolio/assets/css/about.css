@@ -276,6 +276,23 @@ h2{
 
 @media screen and (max-width: 800px) {
 
+    .item5{
+        margin-right: 7vw;
+        margin-left: 7vw;
+        margin-top: 6vw;
+        text-align: right;
+    }
+
+    .item2{
+        margin-left: 3vw;
+    }
+
+    .aboutpics{
+        width: 30vw;
+        height: auto;
+        padding: 7vw;
+    }
+    
     #cvTitle{
         font-size: 10vw;
         margin-bottom: 0%;
@@ -288,8 +305,8 @@ h2{
     }
 
     #cvPDF{
-        margin-left: 23%;
-        margin-top: 2vw;
+        margin-left: 25%;
+        margin-top: 2vw;        
         margin-bottom: 3vw;
     }
 

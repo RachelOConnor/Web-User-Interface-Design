@@ -5,18 +5,19 @@ body{
 
 .display-container{
     display: grid;
-    margin-left: 4vw;
     align-items: center;
-    /* grid-template-columns: auto auto auto; */
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-row-gap: 5vw;
+    grid-template-columns: auto auto auto;
+    grid-gap: 7vw 5vw;
 }
 
 .resize{
     height: auto;
-    width: 23vw;
+    width: 50%;
     padding: 50px;
-    margin-left: -2vw;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: block;
 }
 
 .landscape{
@@ -27,13 +28,16 @@ body{
 .piece{
     background-color: rgba(255, 255, 255, 0.226); 
     border-radius: 3vw; 
-    width: 26vw;
-    text-align: center;
+    width: 100%;
 }
 
-@media screen and (min-width: 800px) {
-    .grid-container{
-        visibility: visible;
+@media screen and (min-width: 1375px){
+    .display-container{
+        display: grid;
+        /* margin-left: 4vw; */
+        align-items: center;
+        grid-template-columns: auto auto auto;
+        grid-gap: 7vw 5vw;
     }
 
     .backButton{
@@ -41,18 +45,10 @@ body{
         display: none;
     }
 
-    #pcFooter{
-        visibility: visible;
-    }
-
-    #mobileFooter{
-        visibility: hidden;
-    }
-
     /* 2d link */
     .navBar:last-child{
         &:after {
-            left: 64.5vw;
+            left: 64.9vw;
         }
         }
         
@@ -61,7 +57,7 @@ body{
         
             /* home link */
             &:first-child ~ :last-child:after { 
-                margin-left: -9%; 
+                margin-left: -8.9%; 
             }
             
             /* 2d link */
@@ -86,13 +82,66 @@ body{
         }
 }
 
+@media screen and (min-width: 800px) and (max-width: 1375px) {
+    .grid-container{
+        visibility: visible;
+    }
+
+    .backButton{
+        visibility: hidden;
+        display: none;
+    }
+
+    #pcFooter{
+        visibility: visible;
+    }
+
+    #mobileFooter{
+        visibility: hidden;
+    }
+
+  /* 2d link */
+  .navBar:last-child{
+    &:after {
+        left: 64.5vw;
+    }
+    }
+    
+    /* slide underline (pseudo element) on hover state */
+    .navBar:hover {
+    
+        /* home link */
+        &:first-child ~ :last-child:after { 
+            margin-left: -9%; 
+        }
+        
+        /* 2d link */
+        &:nth-child(2) ~ :last-child:after { 
+            margin-left: 0%;
+        }
+
+        /* 3d link */
+        &:nth-child(3) ~ :last-child:after { 
+            margin-left: 7.5%;
+        }
+        
+        /* ui link */
+        &:nth-child(4) ~ :last-child:after { 
+            margin-left: 14%;
+        }
+        
+        /* cv link */
+        &:last-child:after{ 
+            margin-left: 21%;
+        }
+    }
+}
+
 @media screen and (max-width: 800px) {
 
     .piece{
         background-color: rgba(255, 255, 255, 0.226); 
         border-radius: 3vw; 
-        width: 80vw;
-        margin-left: 4vw;
     }
 
     .backButton{
@@ -105,10 +154,18 @@ body{
     }
 
     .display-container{
+        align-items: center;
+        grid-template-columns: auto ;
+        grid-gap: 7vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+
+    /* .display-container{
         grid-row-gap: 3vw;
         grid-template-columns: 1fr;
         margin-right: 5%;
-    }
+    } */
 
     .resize{
         height: auto;

@@ -184,3 +184,27 @@ button{
         margin-left: 6vw;
     }
 }
+
+@media screen and (min-width: 800px) {
+
+    .grid-container{
+        visibility: visible;
+    }
+
+    .arrow{
+        margin-top: -1.5vw;
+        width: 5vw;
+    }
+    
+    #digitalArrow{
+        margin-left: 9vw;
+    }
+    #pixelArrow{
+        margin-left: 11vw;
+    }
+    #tradArrow{
+        margin-left: 3vw;
+    }
+}
+
+

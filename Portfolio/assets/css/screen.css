@@ -476,8 +476,101 @@ img{
     height: auto;
 }
 
+@media screen and (min-width: 1350px){
+    
+    .art2{
+        font-size: 1.25vw;
+    }
 
-@media screen and (min-width: 800px) {
+    .canvas-container{
+        margin-top: 0.5vw;
+        max-width: 1900px;
+        width: 100%;
+    
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+
+        /* create underline element */
+    .navBar:last-child{
+
+        &:after {
+            display: block;
+            content: '';
+            height: 2px;
+            width: 4em;
+            background-color: #ffffff;
+            right: 0;
+            left: 55.8vw;
+            position: absolute;
+            margin-top: 10px;
+            transition: .4s ease-in-out;
+        }
+    }
+    
+    /* slide underline (pseudo element) on hover state */
+    .navBar:hover {
+        
+        /* 2d link */
+        &:nth-child(2) ~ :last-child:after { 
+            margin-left: 8.9%;
+        }
+        
+        /* 3d link */
+        &:nth-child(3) ~ :last-child:after { 
+            margin-left: 16.2%;
+        }
+        
+        /* ui link */
+        &:nth-child(4) ~ :last-child:after { 
+            margin-left: 23%;
+        }
+        
+        /* cv link */
+        &:last-child:after{ 
+            margin-left: 29.8%;
+        }
+        }
+    
+        .grid-container{
+            visibility: visible;
+        }
+    
+        .overlay{
+            visibility: hidden;
+            display: none;
+        }
+    
+        #hamburger{
+            visibility: hidden;
+            display: none;
+        }
+    
+        #navLogo{
+            visibility: hidden;
+            display: none;
+        }
+    
+        #pcFooter{
+            visibility: visible;
+            margin-bottom: -10%;
+        }
+    
+        #mobileFooter{
+            visibility: hidden;
+            display: none;
+        }
+    
+        .nav-grid{
+            visibility: hidden;
+            display: none;
+        }
+
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 1350px) {
 
         /* create underline element */
     .navBar:last-child{
@@ -658,17 +751,34 @@ img{
         display: grid;
         grid-template-areas:
         'text1 text1 text1 text1 text1 img1'
-        'text2 text2 text2 text2 text2 text2'
+        'text2 text2 text2 text2 text2 img1'
         'img2 text3 text3 text3 text3 text3'
         'button button button button button button';
-    
-        /* Uncomment this to separate items */
-        /* gap: 5px;  */
+    }
+
+    .item4{
+        margin-top: -5vw;
+    }
+
+    .item1{
+        margin-right: 3vw;
+    }
+
+    .item5{
+        margin-right: 7vw;
+        margin-left: 7vw;
+        margin-top: 6vw;
+        text-align: right;
+    }
+
+    .item2{
+        margin-left: 3vw;
     }
 
     .aboutpics{
         width: 30vw;
         height: auto;
+        padding: 7vw;
     }
 
     .item2{
