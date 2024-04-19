@@ -596,6 +596,12 @@ img{
         visibility: visible;
     }
 
+    #menulogo{
+        width: 30vw;
+        height: auto;
+        margin-bottom: 10vw;
+    }
+
     .navLogos{
         width: 40px;
         height: 40px;
@@ -609,6 +615,7 @@ img{
 
     #findText{
         cursor: default;
+        margin-top: 15vw;
     }
 
     .grid-container{
