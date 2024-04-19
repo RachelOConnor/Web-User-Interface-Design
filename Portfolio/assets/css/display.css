@@ -8,7 +8,7 @@ body{
     margin-left: 4vw;
     align-items: center;
     /* grid-template-columns: auto auto auto; */
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-row-gap: 5vw;
 }
 
@@ -92,7 +92,7 @@ body{
         background-color: rgba(255, 255, 255, 0.226); 
         border-radius: 3vw; 
         width: 80vw;
-        margin-left: 3.5vw;
+        margin-left: 4vw;
     }
 
     .backButton{
