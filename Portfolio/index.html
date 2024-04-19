@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> <!-- Specifies the character encoding for the HTML document -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering and touch zooming on mobile devices -->
+        <title>Home</title> <!-- The title of the document shown in the browser's title bar or page's tab -->
+        <link rel="stylesheet" href="assets/css/screen.css"> <!-- Link to an external CSS file for styling the page -->
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <div class="grid-container">
+
+            <!-- Navigation bar -->
+            <div class="grid-item">
+                <img id="logo" src="assets/img/logo.png" alt="Logo saying Rachel's Portfolio">
+            </div>
+        
+            <div class="grid-item">
+                <div class="status-links">
+                    <a class="navBar" href="">Home</a>
+                    <a class="navBar" href="2DArt.html" >2D</a>
+                    <a class="navBar" href="3DArt.html">3D</a>
+                    <a class="navBar" href="UI.html">UI</a>
+                    <a class="navBar" href="cv.html">CV</a>
+                </div>
+            </div>
+        
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img id="menulogo" src="assets/img/logo.png" alt="Logo saying Rachel's Portfolio">
+                <a href="2DArt.html">2D</a>
+                <a href="3DArt.html">3D</a>
+                <a href="UI.html">UI</a>
+                <a href="cv.html">CV</a>
+
+                <a id="findText" href="#">Find me on:</a>
+
+                <div class="logos-grid">
+                    <div class="hamLogo1">
+                        <a href='mailto:racheloconnor2003@gmail.com'><img class="navLogos" src="assets/img/email.png" alt="Email logo"></a>
+                    </div>
+
+                    <div class="hamLogo2">
+                        <a href='https://www.linkedin.com/in/rachel-o-060582198/'><img class="navLogos" src="assets/img/linkedin.png" alt="LinkedIn logo"></a>
+                    </div>
+
+                    <div class="hamLogo3">
+                        <a href='https://github.com/RachelOConnor'><img class="navLogos" src="assets/img/github.png" alt="GitHub logo"></a>
+                    </div>
+
+                    <div class="hamLogo4">
+                        <a href='https://discordapp.com/users/536636856822005800'><img class="navLogos" src="assets/img/discord.png" alt="Discord logo"></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-grid">
+            <div class="nav1">
+                <img id="navLogo" src="assets/img/logo.png" alt="Logo saying Rachel's Portfolio">
+            </div>
+
+            <div class="nav2">
+                <p id="hamburger" onclick="openNav()">&#9776;</p>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="canvas-container">
+
+            <p id="scoreCounter">Score:</p>
+
+            <button class="button" id="startButton" onclick="start()">Play!</button>
+            <button class="button" id="restartButton" onclick="restart()">Restart</button>
+
+            <canvas id="canvas" width="1000" height="350">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+        </div>
+
+        <section>
+            <h1>About Me</h1>
+            <div class="about-container">
+
+                <div class="item1">
+                    <p>My name is Rachel O' Connor and I'm a 2nd year studying Computing in Interactive Digital
+                    Art and Design (we call ourselves IDADs!). I'm currently doing my studies in SETU Carlow.</p>
+                </div>
+
+                <div class="item2">
+                    <img class="aboutpics" src="assets/img/fleadh.png" 
+                    alt="Picture of Games Fleadh 2024 Best in Game Play award">
+                </div>
+
+                <div class="item3">
+                    <p>I have a passion for 2D pixel art and have just started 3D modelling. 
+                    I also love to make colourful websites (can you tell?) along with coding the occasional game 
+                    or two.
+                    </p>
+                </div>  
+
+                <div class="item4">
+                    <img class="aboutpics" src="https://i.pinimg.com/474x/97/aa/84/97aa847d061a14894178805f1d551500.jpg"
+                    alt="placeholder profile picture">
+                </div>
+
+                <div class="item5">
+                    <p>Just recently, my wonderful team and I entered our game “Bronze Age Brawl” into Games Fleadh
+                        2024 and we won an award for “Best in Game Play”! I was delighted for myself and my team. </p>
+                </div>
+                <div class="item6">
+                        <button onclick="location.href='cv.html';" class="button" id="readMore">Read More</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            
+            <div class="art-container">
+                <div class="art1">
+                    <h1 class="artTitle">2D Art</h1>
+                </div>
+
+                <div class="art2">
+                    <p>For my 2D art, I primarily use Aseprite.
+                        I occasionally use Photoshop or Krita for non-pixel art, 
+                        and for background maps, I use Tiled. To rig my characters such as the cow
+                        animatronic below, I use Spine.</p>
+                </div>
+
+                <div class="art3">
+                    <button class="button" id="more-2d" onclick="location.href='2DArt.html';">
+                        See more
+                        <img class="arrowAdjust" src="assets/img/arrow.png" alt="white arrow icon">
+                    </button>
+                </div>
+
+                <div class="art4">
+                    <img class="resize" src="assets/img/2Dcarousel.png" alt="Display of artwork">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section style="margin-top: 12%;">
+            
+            <div class="art-container">
+                <div class="art1">
+                    <h1 class="artTitle">3D Art</h1>
+                </div>
+
+                <div class="art2">
+                    <p>For my 3D art, I occasionally use Blender or Womp to create smaller projects, 
+                        however I use Maya for larger projects.</p>
+                </div>
+
+                <div class="art3">
+                    <button class="button" id="more-3d" onclick="location.href='3DArt.html';">
+                        See more
+                        <img class="arrowAdjust" src="assets/img/arrow.png" alt="white arrow icon">
+                    </button>
+                </div>
+
+                <div class="art4">
+                    <img class="resize" src="assets/img/3Dcarousel.png" alt="Display of artwork">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section style="margin-top: 12%;">
+            
+            <div class="art-container">
+                <div class="art1">
+                    <h1 class="artTitle">UI Design</h1>
+                </div>
+
+                <div class="art2">
+                    <p>For my UI designs, I use Figma, Inkscape and Penpot for the prototyping and graphics, 
+                        then VSCode involving HTML, CSS and Javascript to develop the site itself.</p>
+                </div>
+
+                <div class="art3">
+                    <button class="button" id="more-ui" onclick="location.href='UI.html';">
+                        See more
+                        <img class="arrowAdjust" src="assets/img/arrow.png" alt="white arrow icon">
+                    </button>
+                </div>
+
+                <div class="art4">
+                    <img class="resize" src="assets/img/UIcarousel.png" alt="Display of artwork">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="pcFooter">
+
+            <h1 style="font-size: 1.5vw; font-weight: lighter; text-align: center;">Thank you for visiting!</h1>
+
+            <div class="footer-container">
+
+                <div class="link1">
+                    <p onclick="location.href='mailto:racheloconnor2003@gmail.com'" class="footerFix">racheloconnor2003@gmail.com</p>
+                </div>
+
+                <div class="link2">
+                    <p onclick="location.href='https://www.linkedin.com/in/rachel-o-060582198/'" class="footerFix">racheloc2003</p>
+                </div>
+
+                <div class="line1">
+                    <img class="line" src="assets/img/line.png" alt="A decorative dividing line">
+                </div>  
+
+                <div class="logo">
+                    <img id="footerLogo" src="assets/img/logo.png" alt="Logo saying Rachel's Portfolio">
+                </div>  
+
+                <div class="line2">
+                    <img class="line" src="assets/img/line.png" alt="A decorative dividing line">
+                </div>  
+
+                <div class="link3">
+                    <p onclick="location.href='https://github.com/RachelOConnor'" class="footerFix">RachelOConnor</p>
+                </div>  
+
+                <div class="link4">
+                    <p onclick="location.href='https://discordapp.com/users/536636856822005800'" class="footerFix">Goldenhugs</p>
+                </div>  
+
+                <div class="logo1">
+                    <img onclick="location.href='mailto:racheloconnor2003@gmail.com'" class="logos" src="assets/img/email.png" alt="Email logo">
+                </div>  
+
+                <div class="logo2">
+                    <img onclick="location.href='https://www.linkedin.com/in/racheloc2003/'" class="logos" src="assets/img/linkedin.png" alt="LinkedIn logo">
+                </div>  
+
+                <div class="logo3">
+                    <img onclick="location.href='https://github.com/RachelOConnor'" class="logos" src="assets/img/github.png" alt="Github logo">
+                </div> 
+
+                <div class="logo4">
+                    <img onclick="location.href='https://discordapp.com/users/536636856822005800'" class="logos" src="assets/img/discord.png" alt="Discord logo">
+                </div>
+            </div> 
+        </section>
+
+        <section id="mobileFooter">
+            <h1 style="font-size: 20px; font-weight: lighter; text-align: center; margin-bottom: 8%;">Thank you for visiting!</h1>
+
+            <div class="logos-grid">
+                <div class="hamLogo1">
+                    <a href='mailto:racheloconnor2003@gmail.com'><img class="logos" src="assets/img/email.png" alt="Email logo"></a>
+                </div>
+
+                <div class="hamLogo2">
+                    <a href='https://www.linkedin.com/in/rachel-o-060582198/'><img class="logos" src="assets/img/linkedin.png" alt="LinkedIn logo"></a>
+                </div>
+
+                <div class="hamLogo3">
+                    <a href='https://github.com/RachelOConnor'><img class="logos" src="assets/img/github.png" alt="GitHub logo"></a>
+                </div>
+
+                <div class="hamLogo4">
+                    <a href='https://discordapp.com/users/536636856822005800'><img class="logos" src="assets/img/discord.png" alt="Discord logo"></a>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+
+            <p id="copyright">&#169; 2024 Rachel O' Connor <p>
+
+        </section>
+
+        <script src="assets/js/nipplejs.js"></script> 
+        <script src="assets/js/script.js"></script> <!-- Link to the external JavaScript file for handling user interactions -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </body>
+</html>

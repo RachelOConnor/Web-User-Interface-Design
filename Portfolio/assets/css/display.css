@@ -1,0 +1,124 @@
+body{
+    background-image: linear-gradient(180deg, #36C3E1, #CA32FF);
+    height: auto;
+}
+
+.display-container{
+    display: grid;
+    margin-left: 4vw;
+    align-items: center;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 5vw;
+}
+
+.resize{
+    height: auto;
+    width: 23vw;
+    padding: 50px;
+    margin-left: -2vw;
+}
+
+.landscape{
+    height: auto;
+    width: 45vw;
+}
+
+.piece{
+    background-color: rgba(255, 255, 255, 0.226); 
+    border-radius: 3vw; 
+    width: 26vw;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .grid-container{
+        visibility: visible;
+    }
+
+    .backButton{
+        visibility: hidden;
+        display: none;
+    }
+
+    #pcFooter{
+        visibility: visible;
+    }
+
+    #mobileFooter{
+        visibility: hidden;
+    }
+
+    /* 2d link */
+    .navBar:last-child{
+        &:after {
+            left: 64.5vw;
+        }
+        }
+        
+        /* slide underline (pseudo element) on hover state */
+        .navBar:hover {
+        
+            /* home link */
+            &:first-child ~ :last-child:after { 
+                margin-left: -9%; 
+            }
+            
+            /* 2d link */
+            &:nth-child(2) ~ :last-child:after { 
+                margin-left: 0%;
+            }
+
+            /* 3d link */
+            &:nth-child(3) ~ :last-child:after { 
+                margin-left: 7.5%;
+            }
+            
+            /* ui link */
+            &:nth-child(4) ~ :last-child:after { 
+                margin-left: 14%;
+            }
+            
+            /* cv link */
+            &:last-child:after{ 
+                margin-left: 21%;
+            }
+        }
+}
+
+@media screen and (max-width: 800px) {
+
+    .piece{
+        background-color: rgba(255, 255, 255, 0.226); 
+        border-radius: 3vw; 
+        width: 80vw;
+        margin-left: 2vw;
+    }
+
+    .backButton{
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .grid-container{
+        visibility: hidden;
+    }
+
+    .display-container{
+        grid-row-gap: 3vw;
+        grid-template-columns: 1fr;
+        margin-right: 5%;
+    }
+
+    .resize{
+        height: auto;
+        width: 40vw;
+        border-radius: 3vw;
+    }
+
+    .landscape{
+        height: auto;
+        width: 70vw;
+        border-radius: 3vw;
+    }
+}

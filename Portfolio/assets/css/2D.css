@@ -1,0 +1,187 @@
+body{
+    background-image: linear-gradient(180deg, #36C3E1, #CA32FF);
+    height: auto;
+}
+
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.artButton{
+    height: 13vw;
+    width: 29vw;
+    margin: 1.5vw;
+    margin-bottom: 0%;
+    background-color: rgba(37, 104, 163, 0.233);
+    text-align: left;
+    border-radius: 2vw;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+
+    font-family: "Krona One", sans-serif;
+    font-size: 2vw;
+    color: white;
+
+    padding-top: 9.5vw;
+    padding-left: 1vw;
+
+    display: flex;
+}
+
+.arrow{
+    margin-top: -1.5vw;
+
+    display: flex;
+}
+
+#tradButton{
+    background-image: linear-gradient(180deg, #3838383d,#3838383d), url('../../assets/img/motorbike.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#tradButton:hover{
+    background-image: linear-gradient(180deg, #ffffff00, #000000), url('../../assets/img/motorbike.png');
+}
+#tradArrow{
+    margin-left: 3.5vw;
+}
+
+#pixelButton{
+    background-image: url('../../assets/img/pixelCar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#pixelButton:hover{
+    background-image: linear-gradient(180deg, #ffffff00, #000000), url('../../assets/img/pixelCar.png');
+}
+#pixelArrow{
+    margin-left: 11vw;
+}
+
+#digitalButton{
+    background-image: url('../../assets/img/pixarCar.png');
+    background-size: cover;
+    background-position: center;
+}
+#digitalButton:hover{
+    background-image: linear-gradient(180deg, #ffffff00, #000000), url('../../assets/img/pixarCar.png');
+}
+#digitalArrow{
+    margin-left: 9vw;
+}
+
+.overlay {
+    background-image: linear-gradient(180deg, #36C3E1, #CA32FF);
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+    .grid-container{
+        visibility: visible;
+    }
+
+    .overlay{
+        visibility: hidden;
+    }
+
+    #hamburger{
+        visibility: hidden;
+    }
+
+    #navLogo{
+        visibility: hidden;
+    }
+
+    #pcFooter{
+        visibility: visible;
+    }
+
+    #mobileFooter{
+        visibility: hidden;
+    }
+
+    /* 2d link */
+    .navBar:last-child{
+        &:after {
+            left: 64.5vw;
+        }
+        }
+        
+        /* slide underline (pseudo element) on hover state */
+        .navBar:hover {
+        
+            /* home link */
+            &:first-child ~ :last-child:after { 
+                margin-left: -9%; 
+            }
+            
+            /* 2d link */
+            &:nth-child(2) ~ :last-child:after { 
+                margin-left: 0%;
+            }
+
+            /* 3d link */
+            &:nth-child(3) ~ :last-child:after { 
+                margin-left: 7.5%;
+            }
+            
+            /* ui link */
+            &:nth-child(4) ~ :last-child:after { 
+                margin-left: 14%;
+            }
+            
+            /* cv link */
+            &:last-child:after{ 
+                margin-left: 21%;
+            }
+        }
+}
+
+@media screen and (max-width: 800px) {
+    .flex-container {
+        display: block;
+        margin-left: 8vw;
+    }
+
+    .artButton{
+        height: 30vw;
+        width: 80vw;
+        margin-top: 7vw;
+
+    }
+
+    .grid-container{
+        visibility: hidden;
+    }
+
+    button{
+        padding-top: 25%;
+        font-size: 30px;
+    }
+
+    .arrow{
+        margin-top: -2.5vw;
+    }
+    
+    #digitalArrow{
+        margin-left: 25vw;
+    }
+    #pixelArrow{
+        margin-left: 31vw;
+    }
+    #tradArrow{
+        margin-left: 8vw;
+    }
+    
+}
