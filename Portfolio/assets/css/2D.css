@@ -158,7 +158,6 @@ button{
         height: 30vw;
         width: 80vw;
         margin-top: 7vw;
-
     }
 
     .grid-container{
@@ -167,21 +166,21 @@ button{
 
     button{
         padding-top: 25%;
-        font-size: 30px;
+        font-size: 6vw;
     }
 
     .arrow{
         margin-top: -2.5vw;
+        width: 15vw;
     }
     
     #digitalArrow{
-        margin-left: 25vw;
+        margin-left: 24vw;
     }
     #pixelArrow{
-        margin-left: 31vw;
+        margin-left: 30vw;
     }
     #tradArrow{
-        margin-left: 8vw;
+        margin-left: 6vw;
     }
-    
 }
