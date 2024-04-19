@@ -428,6 +428,9 @@ section{
     font-size:50px;
     cursor:pointer;
     margin-bottom: 0px;
+
+    width: 13vw;
+    height: auto;
 }
 
 .overlay {
@@ -554,6 +557,10 @@ img{
         overflow-x: hidden;
     }
 
+    .nav2 { 
+        margin-left:60vw;
+    }
+
     h1{
         font-size: 10vw;
     }
@@ -594,6 +601,8 @@ img{
 
     #navLogo{
         visibility: visible;
+        width: 70vw;
+        height: auto;
     }
 
     #menulogo{
