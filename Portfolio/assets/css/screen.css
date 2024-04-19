@@ -471,6 +471,11 @@ img{
     max-width: 100%;
 }
 
+.aboutpics{
+    width: 20vw;
+    height: auto;
+}
+
 
 @media screen and (min-width: 800px) {
 
